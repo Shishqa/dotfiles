@@ -1,4 +1,4 @@
-#include "/home/shishqa/.config/.Xresources.d/colors/jellybeans"
+#include "/home/shishqa/.config/.xresources.d/colors/jellybeans"
 
 *.foreground:  cfg
 *.background:  cbg
