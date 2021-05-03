@@ -1,0 +1,3 @@
+cd /mnt/WorkDisk/share/dev/__concur/course-main/docker/client/bin
+./restart
+./login

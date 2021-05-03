@@ -1,0 +1,31 @@
+!#< colors 
+
+! State:           'bg',          'fg',      'bgalt',        'hlbg',         'hlfg'
+rofi.color-normal: argb:001E1E1E,  #A7A7A7,  argb:00151515,  argb:FFD9E5D6,  #1E1E1E
+rofi.color-active: argb:001E1E1E,  #D9E5D6,  argb:00151515,  argb:FFD9E5D6,  #1E1E1E
+rofi.color-urgent: argb:001E1E1E,  #F259D5,  argb:00151515,  argb:FFD9E5D6,  #1E1E1E
+!                  'bg',           'border'
+rofi.color-window: argb:E01E1E1E,  #404552
+
+!#< config 
+
+rofi.modi:              ssh,window,drun,run
+rofi.sidebarmode:      false
+rofi.terminal:          urxvt
+rofi.ssh-client:        ssh
+rofi.ssh-command:       {terminal} -e "{ssh-client} {host}"
+rofi.opacity:           100
+rofi.columns:           1
+rofi.fullscreen:        true
+rofi.font:              Monospace 16
+
+rofi.bw:                0
+rofi.padding:           400
+rofi.levenshtein-sort:  true
+rofi.case-sensitive:    false
+rofi.fuzzy:             false
+rofi.line-margin:       2
+rofi.separator-style:   none
+rofi.hide-scrollbar:    true
+rofi.markup-rows:       false
+

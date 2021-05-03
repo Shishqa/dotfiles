@@ -1,0 +1,20 @@
+#!/bin/zsh
+
+alias ls='ls -a --color=auto'
+alias p='sudo pacman'
+
+alias e='urxvt -e vifm . ~ &' 
+
+alias vim='nvim'
+alias v='vim'
+
+alias sysctl='sudo systemctl'
+alias vifm='vifm .'
+
+# browser-sync config
+# Get the current local IP address
+export SERVER_IP=`hostname -i`
+
+# The command alias to start the browser-sync server
+alias serve="browser-sync start --server --files . \
+             --no-notify --host $SERVER_IP --port 9000"
