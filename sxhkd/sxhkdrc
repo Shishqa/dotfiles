@@ -16,25 +16,9 @@ super + shift + Return
 super + e
     $TERMINAL -e $EXPLORER ~ $WORK &
 
-# open files super-fast
-super + o
-    bolt --rofi-search &
-
 # browser
 super + w
     $BROWSER &
-
-# spotify client
-super + alt + m
-    $TERMINAL -name 'ncspot' -e ncspot &
-
-# notion 
-super + n
-    $BROWSER --new-window "https://www.notion.so/shishqa/Get-Things-Done-89cf6908783b4b45b37ff913535d0074" &
-
-# calendar
-super + c
-    $TERMINAL -name 'calendar' -e "calcurse" &    
 
 # pick colour
 super + p
@@ -48,25 +32,13 @@ super + i
 super + d
 	rofi -show combi
 
-# bluetooth menu
-super + alt + b
-    rofi-bluetooth
-
-# wifi menu
-super + alt + w
-    rofi-wifimenu
-
 # power menu
 super + alt + q
-    rofi-powermenu
+    rofi-conf
 
 # emojis 
 super + alt + e
     rofimoji
-
-# calculator
-super + alt + c
-    rofi-calculator
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
