@@ -31,4 +31,4 @@ export VIFM="$HOME/.config/vifm"
 
 #==========================================================================#
 
-export PATH="$PATH:$SCRIPTS:$HOME/.local/bin:$HOME/dev/__tarantool/luajit_perf/scripts:$GOBIN"
+export PATH="$PATH:$SCRIPTS:$SCRIPTS/rofi/:$HOME/.local/bin:$GOBIN:$HOME/.gem/ruby/3.0.0/bin"

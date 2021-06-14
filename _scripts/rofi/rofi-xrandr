@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# options to be displayed
+profiles=$(autorandr)
+
+chosen="$(echo -e "$profiles" | rofi -lines ${#profiles[@]} -dmenu -p "profiles")"
+[ ! -z $chosen ] && autorandr -l $chosen

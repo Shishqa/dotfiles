@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# options to be displayed
+monitors=$(xrandr -q | grep -Po '[^\n]+(?= connected)')
+
+# id of connected stilus
+stilusid=$(xsetwacom --list devices | grep -Po "[[:digit:]]+(?=\s*type: STYLUS)")
+
+chosen="$(echo -e "$monitors" | rofi -lines ${#monitors[@]} -dmenu -p "wacom")"
+[ ! -z $chosen ] && xsetwacom --set "$stilusid" MapToOutput "$chosen"
+

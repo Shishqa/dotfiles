@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# options to be displayed
+menus=(
+"power"
+"wacom"
+"xrandr"
+"wifi"
+"bluetooth"
+)
+
+menus_line=$(printf "\n%s" "${menus[@]}")
+menus_line=${menus_line:1}
+chosen="$(echo -e "$menus_line" | rofi -lines ${#menus[@]} -dmenu -p "conf")"
+[ ! -z $chosen ] && exec "rofi-$chosen"
