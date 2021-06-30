@@ -50,4 +50,6 @@ TIMER_FORMAT="\n\e[95m[%d]\e[39m"
 
 [ -f "$ZDOTDIR/.aliasrc" ] && source "$ZDOTDIR/.aliasrc"
 
+[ -f "$SCRIPTS/shittime.bash" ] && source "$SCRIPTS/shittime.bash"
+
 #==========================================================================#

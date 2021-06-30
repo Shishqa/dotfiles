@@ -8,8 +8,10 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 CONFIG=$HOME/.config/polybar/bars.ini
 
-polybar --config=$CONFIG top &
-polybar --config=$CONFIG bottom &
+if [[ $(xrandr -q | grep 'eDP1 connected') ]]; then
+    polybar --config=$CONFIG top &
+    polybar --config=$CONFIG bottom &
+fi
 
 if [[ $(xrandr -q | grep 'DP1 connected') ]]; then
     polybar --config=$CONFIG top_external &

@@ -33,6 +33,7 @@ window:
     padding:
         x: 10
         y: 10
+
   # Window title
   #title: Alacritty
 
