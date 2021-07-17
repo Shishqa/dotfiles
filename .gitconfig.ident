@@ -1,0 +1,5 @@
+[user]
+	email = shishqa.main@gmail.com
+	name = Shishqa
+[includeIf "gitdir:/mnt/WorkDisk/share/dev/__tarantool"]
+    path = /mnt/WorkDisk/share/dev/__tarantool/.gitconfig

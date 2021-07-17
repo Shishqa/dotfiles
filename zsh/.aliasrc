@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-alias ls='ls -a --color=auto'
+alias ls='ls -la --color=auto'
 alias p='sudo pacman'
 
 alias e='urxvt -e vifm . ~ &' 

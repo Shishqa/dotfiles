@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# options to be displayed
+now=$(t now)
+
+chosen="$(rofi -mesg "$now" -dmenu -p "timesheet")"
+if ! [[ -z $chosen ]]; then
+    timetrap out
+    timetrap in "$chosen"
+fi

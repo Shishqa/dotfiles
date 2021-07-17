@@ -1,0 +1,14 @@
+[core]
+    editor = nvim
+    filemode = false
+[pull]
+    rebase = merges
+
+[includeIf "gitdir:/mnt/WorkDisk/share/dev/__personal/"]
+    path = /mnt/WorkDisk/share/dev/__personal/.gitconfig
+[includeIf "gitdir:/mnt/WorkDisk/share/dev/__mipt/"]
+    path = /mnt/WorkDisk/share/dev/__mipt/.gitconfig
+[includeIf "gitdir:/mnt/WorkDisk/share/dev/__tarantool/"]
+    path = /mnt/WorkDisk/share/dev/__tarantool/.gitconfig
+[includeIf "gitdir:/mnt/WorkDisk/share/dev/__ispras/"]
+    path = /mnt/WorkDisk/share/dev/__ispras/.gitconfig

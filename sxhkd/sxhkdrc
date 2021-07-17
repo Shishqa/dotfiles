@@ -40,6 +40,13 @@ super + alt + q
 super + alt + e
     rofimoji
 
+# select timesheet
+super + alt + t
+    rofi-timetrap-sheet
+# choose activity
+super + alt + n
+    rofi-timetrap-now
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
 # screenshots

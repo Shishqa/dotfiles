@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# options to be displayed
+timesheets=$(t list | tail -n +2 | cut -d' ' -f1-2)
+
+chosen="$(echo -e "$timesheets" | rofi -lines ${#timesheets[@]} -dmenu -p "timesheet")"
+
+chosen=$(echo "$chosen" | sed -e 's/^[ \t*-]*//')
+if ! [[ -z $chosen ]]; then 
+    timetrap out
+    timetrap sheet $chosen
+fi
