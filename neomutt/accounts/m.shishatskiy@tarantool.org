@@ -1,0 +1,14 @@
+# vim: filetype=muttrc
+set mbox_type = Maildir
+
+set from      = "m.shishatskiy@tarantool.org"
+set realname  = "Mikhail Shishatskiy"
+
+# set folder    = "/mnt/WorkDisk/share/mail/tarantool/"
+set smtp_url  = "smtps://m.shishatskiy@tarantool.org@smtp.mail.ru:465"
+set smtp_pass = `pass show tarantool/m.shishatskiy@tarantool.org`
+
+set spoolfile = "+tarantool/inbox"
+set record    = "+tarantool/sent"
+set trash     = "+tarantool/trash"
+set postponed = "+tarantool/drafts"

@@ -21,8 +21,12 @@ super + w
     $BROWSER &
 
 # pick colour
+#super + p
+#    pick-colour-picker &
+
+# get passwords
 super + p
-    pick-colour-picker &
+    rofi-pass 
 
 # system monitor
 super + i

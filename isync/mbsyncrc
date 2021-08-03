@@ -1,0 +1,103 @@
+# Accounts
+
+## [Tarantool]
+
+IMAPStore tarantool-remote
+Host imap.mail.ru
+User m.shishatskiy@tarantool.org
+PassCmd "pass show tarantool/m.shishatskiy@tarantool.org"
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore tarantool-local
+Path /mnt/WorkDisk/share/mail/tarantool/
+Inbox /mnt/WorkDisk/share/mail/tarantool/inbox/
+
+Channel tarantool-inbox
+Far :tarantool-remote:"INBOX"
+Near :tarantool-local:inbox
+Create Both
+Expunge Both
+SyncState *
+
+Channel tarantool-sent
+Far :tarantool-remote:"Отправленные"
+Near :tarantool-local:sent
+Create Both
+Expunge Both
+SyncState *
+
+Channel tarantool-drafts
+Far :tarantool-remote:"Черновики"
+Near :tarantool-local:drafts
+Create Both
+Expunge Both
+SyncState *
+
+Channel tarantool-spam
+Far :tarantool-remote:"Спам"
+Near :tarantool-local:spam
+Create Both
+Expunge Both
+SyncState *
+
+Channel tarantool-trash
+Far :tarantool-remote:"Корзина"
+Near :tarantool-local:trash
+Create Both
+Expunge Both
+SyncState *
+
+Group tarantool
+Channel tarantool-inbox
+Channel tarantool-sent
+Channel tarantool-drafts
+Channel tarantool-spam
+Channel tarantool-trash
+
+## [Ispras]
+
+IMAPStore ispras-remote
+Host mail.ispras.ru
+User shishqa@ispras.ru
+PassCmd "pass show ispras/mail"
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore ispras-local
+Path /mnt/WorkDisk/share/mail/ispras/
+Inbox /mnt/WorkDisk/share/mail/ispras/inbox/
+
+Channel ispras-inbox
+Far :ispras-remote:"INBOX"
+Near :ispras-local:inbox
+Create Both
+Expunge Both
+SyncState *
+
+Channel ispras-sent
+Far :ispras-remote:"Sent"
+Near :ispras-local:sent
+Create Both
+Expunge Both
+SyncState *
+
+Channel ispras-spam
+Far :ispras-remote:"Spam"
+Near :ispras-local:spam
+Create Both
+Expunge Both
+SyncState *
+
+Channel ispras-trash
+Far :ispras-remote:"Trash"
+Near :ispras-local:trash
+Create Both
+Expunge Both
+SyncState *
+
+Group tarantool
+Channel tarantool-inbox
+Channel tarantool-sent
+Channel tarantool-spam
+Channel tarantool-trash

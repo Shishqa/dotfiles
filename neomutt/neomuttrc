@@ -1,0 +1,12 @@
+# vim: filetype=muttrc
+
+set folder = "/mnt/WorkDisk/share/mail/"
+
+source ~/.config/neomutt/settings
+source ~/.config/neomutt/sidebar
+
+# Accounts
+
+folder-hook ispras/* source ~/.config/neomutt/accounts/shishqa@ispras.ru
+
+# source ~/.config/neomutt/accounts/shishqa@ispras.ru
