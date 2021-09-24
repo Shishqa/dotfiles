@@ -1,0 +1,47 @@
+Date: Wed May 12 22:19:37 2021
+Error: signal 11
+[bt]: (0) xournalpp(+0x1d95d2) [0x5601f893f5d2]
+[bt]: (1) /usr/lib/libc.so.6(+0x3cf80) [0x7f803b2f2f80]
+[bt]: (2) /usr/lib/libgtk-3.so.0(gtk_widget_queue_draw+0x26) [0x7f803c30a1f6]
+[bt]: (3) xournalpp(+0xce875) [0x5601f8834875]
+[bt]: (4) xournalpp(+0x1e069e) [0x5601f894669e]
+[bt]: (5) /usr/lib/libgdk-3.so.0(+0x2e89c) [0x7f803bf0589c]
+[bt]: (6) /usr/lib/libglib-2.0.so.0(g_main_context_dispatch+0x160) [0x7f803c7d3f30]
+[bt]: (7) /usr/lib/libglib-2.0.so.0(+0xa7b59) [0x7f803c827b59]
+[bt]: (8) /usr/lib/libglib-2.0.so.0(g_main_loop_run+0x83) [0x7f803c7d3593]
+[bt]: (9) /usr/lib/libgtk-3.so.0(gtk_main+0x9f) [0x7f803c1ad61f]
+[bt]: (10) xournalpp(_ZN11XournalMain3runEiPPc+0xbc3) [0x5601f882bab3]
+[bt]: (11) xournalpp(main+0x37) [0x5601f87ff177]
+[bt]: (12) /usr/lib/libc.so.6(__libc_start_main+0xd5) [0x7f803b2ddb25]
+[bt]: (13) xournalpp(_start+0x2e) [0x5601f87ff70e]
+
+
+Try to get a better stracktrace...
+[bt] #1 xournalpp(+0x1d987b) [0x5601f893f87b]
+??:0
+[bt] #2 /usr/lib/libc.so.6(+0x3cf80) [0x7f803b2f2f80]
+??:0
+[bt] #3 /usr/lib/libgtk-3.so.0(gtk_widget_queue_draw+0x26) [0x7f803c30a1f6]
+??:0
+[bt] #4 xournalpp(+0xce875) [0x5601f8834875]
+??:0
+[bt] #5 xournalpp(+0x1e069e) [0x5601f894669e]
+??:0
+[bt] #6 /usr/lib/libgdk-3.so.0(+0x2e89c) [0x7f803bf0589c]
+??:0
+[bt] #7 /usr/lib/libglib-2.0.so.0(g_main_context_dispatch+0x160) [0x7f803c7d3f30]
+??:0
+[bt] #8 /usr/lib/libglib-2.0.so.0(+0xa7b59) [0x7f803c827b59]
+??:0
+[bt] #9 /usr/lib/libglib-2.0.so.0(g_main_loop_run+0x83) [0x7f803c7d3593]
+??:0
+[bt] #10 /usr/lib/libgtk-3.so.0(gtk_main+0x9f) [0x7f803c1ad61f]
+??:0
+[bt] #11 xournalpp(_ZN11XournalMain3runEiPPc+0xbc3) [0x5601f882bab3]
+??:0
+[bt] #12 xournalpp(main+0x37) [0x5601f87ff177]
+??:0
+[bt] #13 /usr/lib/libc.so.6(__libc_start_main+0xd5) [0x7f803b2ddb25]
+??:0
+[bt] #14 xournalpp(_start+0x2e) [0x5601f87ff70e]
+??:0

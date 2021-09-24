@@ -1,0 +1,47 @@
+Date: Wed Jun  2 16:05:48 2021
+Error: signal 11
+[bt]: (0) xournalpp(+0x1d95d2) [0x55c1e6f1f5d2]
+[bt]: (1) /usr/lib/libc.so.6(+0x3cf80) [0x7f3067924f80]
+[bt]: (2) xournalpp(_ZN7XojPage11unreferenceEv+0x96) [0x55c1e6efb5c6]
+[bt]: (3) xournalpp(_ZN7PageRefD1Ev+0x90) [0x55c1e6ef4140]
+[bt]: (4) xournalpp(_ZN11XojPageViewD1Ev+0x203) [0x55c1e6e84f63]
+[bt]: (5) xournalpp(_ZN11XojPageViewD0Ev+0x9) [0x55c1e6e84f99]
+[bt]: (6) xournalpp(_ZN11XournalViewD2Ev+0xb7) [0x55c1e6e90fc7]
+[bt]: (7) xournalpp(_ZN11XournalViewD0Ev+0x9) [0x55c1e6e91119]
+[bt]: (8) xournalpp(_ZN10MainWindowD1Ev+0xdb) [0x55c1e6e7b65b]
+[bt]: (9) xournalpp(_ZN10MainWindowD0Ev+0x9) [0x55c1e6e7b7a9]
+[bt]: (10) xournalpp(_ZN11XournalMain3runEiPPc+0xbf9) [0x55c1e6e0bae9]
+[bt]: (11) xournalpp(main+0x37) [0x55c1e6ddf177]
+[bt]: (12) /usr/lib/libc.so.6(__libc_start_main+0xd5) [0x7f306790fb25]
+[bt]: (13) xournalpp(_start+0x2e) [0x55c1e6ddf70e]
+
+
+Try to get a better stracktrace...
+[bt] #1 xournalpp(+0x1d987b) [0x55c1e6f1f87b]
+??:0
+[bt] #2 /usr/lib/libc.so.6(+0x3cf80) [0x7f3067924f80]
+??:0
+[bt] #3 xournalpp(_ZN7XojPage11unreferenceEv+0x96) [0x55c1e6efb5c6]
+??:0
+[bt] #4 xournalpp(_ZN7PageRefD1Ev+0x90) [0x55c1e6ef4140]
+??:0
+[bt] #5 xournalpp(_ZN11XojPageViewD1Ev+0x203) [0x55c1e6e84f63]
+??:0
+[bt] #6 xournalpp(_ZN11XojPageViewD0Ev+0x9) [0x55c1e6e84f99]
+??:0
+[bt] #7 xournalpp(_ZN11XournalViewD2Ev+0xb7) [0x55c1e6e90fc7]
+??:0
+[bt] #8 xournalpp(_ZN11XournalViewD0Ev+0x9) [0x55c1e6e91119]
+??:0
+[bt] #9 xournalpp(_ZN10MainWindowD1Ev+0xdb) [0x55c1e6e7b65b]
+??:0
+[bt] #10 xournalpp(_ZN10MainWindowD0Ev+0x9) [0x55c1e6e7b7a9]
+??:0
+[bt] #11 xournalpp(_ZN11XournalMain3runEiPPc+0xbf9) [0x55c1e6e0bae9]
+??:0
+[bt] #12 xournalpp(main+0x37) [0x55c1e6ddf177]
+??:0
+[bt] #13 /usr/lib/libc.so.6(__libc_start_main+0xd5) [0x7f306790fb25]
+??:0
+[bt] #14 xournalpp(_start+0x2e) [0x55c1e6ddf70e]
+??:0
