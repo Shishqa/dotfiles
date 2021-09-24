@@ -8,5 +8,7 @@ source ~/.config/neomutt/sidebar
 # Accounts
 
 folder-hook ispras/* source ~/.config/neomutt/accounts/shishqa@ispras.ru
+folder-hook tarantool/* source ~/.config/neomutt/accounts/m.shishatskiy@tarantool.org
+folder-hook personal/shishqa.main/* source ~/.config/neomutt/accounts/shishqa.main@gmail.com
 
 # source ~/.config/neomutt/accounts/shishqa@ispras.ru

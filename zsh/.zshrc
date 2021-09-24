@@ -36,7 +36,8 @@ plugins=(
     timer
 )
 
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=239"
+#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=239"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=242"
 TIMER_FORMAT="\n\e[95m[%d]\e[39m"
 
 #==========================================================================#
@@ -53,3 +54,7 @@ TIMER_FORMAT="\n\e[95m[%d]\e[39m"
 [ -f "$SCRIPTS/shittime.bash" ] && source "$SCRIPTS/shittime.bash"
 
 #==========================================================================#
+
+# Clippy
+[ -f "$HOME/dev/__mipt/tftds/distsys-course/client/activate" ] && source "$HOME/dev/__mipt/tftds/distsys-course/client/activate"
+[ -f "$HOME/dev/__mipt/tftds/distsys-course/client/complete.bash" ] && source "$HOME/dev/__mipt/tftds/distsys-course/client/complete.bash"

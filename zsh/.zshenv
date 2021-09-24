@@ -24,6 +24,8 @@ export PASSWORD_STORE_DIR="$SECRET/passwords"
 export GOPATH="$HOME/.goenv"
 export GOBIN="$HOME/.goenv/bin"
 
+export CXX="/usr/bin/clang++"
+
 #==========================================================================#
 
 export DOTFILES="$HOME/.config"

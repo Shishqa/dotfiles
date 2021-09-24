@@ -1,5 +1,107 @@
 # Accounts
 
+## [Ispras]
+
+IMAPStore ispras-remote
+Host mail.ispras.ru
+User shishqa@ispras.ru
+PassCmd "pass show ispras/mail"
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore ispras-local
+Path /mnt/WorkDisk/share/mail/ispras/
+Inbox /mnt/WorkDisk/share/mail/ispras/inbox/
+
+Channel ispras-inbox
+Far :ispras-remote:"INBOX"
+Near :ispras-local:inbox
+Create Both
+Expunge Both
+SyncState *
+
+Channel ispras-sent
+Far :ispras-remote:"Sent"
+Near :ispras-local:sent
+Create Both
+Expunge Both
+SyncState *
+
+Channel ispras-spam
+Far :ispras-remote:"Spam"
+Near :ispras-local:spam
+Create Both
+Expunge Both
+SyncState *
+
+Channel ispras-trash
+Far :ispras-remote:"Trash"
+Near :ispras-local:trash
+Create Both
+Expunge Both
+SyncState *
+
+Group ispras
+Channel ispras-inbox
+Channel ispras-sent
+Channel ispras-spam
+Channel ispras-trash
+
+## [shishqa.main@gmail.com]
+
+IMAPStore shishqa-remote
+Host imap.gmail.com
+User shishqa.main@gmail.com
+PassCmd "pass show neomutt/shishqa.main@gmail.com"
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore shishqa-local
+Path /mnt/WorkDisk/share/mail/personal/shishqa.main/
+Inbox /mnt/WorkDisk/share/mail/personal/shishqa.main/inbox/
+
+Channel shishqa-inbox
+Far :shishqa-remote:"INBOX"
+Near :shishqa-local:inbox
+Create Both
+Expunge Both
+SyncState *
+
+Channel shishqa-sent
+Far :shishqa-remote:"[Gmail]/&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-"
+Near :shishqa-local:sent
+Create Both
+Expunge Both
+SyncState *
+
+Channel shishqa-drafts
+Far :shishqa-remote:"[Gmail]/&BCcENQRABD0EPgQyBDgEOgQ4-"
+Near :shishqa-local:drafts
+Create Both
+Expunge Both
+SyncState *
+
+Channel shishqa-spam
+Far :shishqa-remote:"[Gmail]/&BCEEPwQwBDw-"
+Near :shishqa-local:spam
+Create Both
+Expunge Both
+SyncState *
+
+Channel shishqa-trash
+Far :shishqa-remote:"[Gmail]/&BBoEPgRABDcEOAQ9BDA-"
+Near :shishqa-local:trash
+Create Both
+Expunge Both
+SyncState *
+
+Group shishqa
+Channel shishqa-inbox
+Channel shishqa-sent
+Channel shishqa-drafts
+Channel shishqa-spam
+Channel shishqa-trash
+
 ## [Tarantool]
 
 IMAPStore tarantool-remote
@@ -52,52 +154,5 @@ Group tarantool
 Channel tarantool-inbox
 Channel tarantool-sent
 Channel tarantool-drafts
-Channel tarantool-spam
-Channel tarantool-trash
-
-## [Ispras]
-
-IMAPStore ispras-remote
-Host mail.ispras.ru
-User shishqa@ispras.ru
-PassCmd "pass show ispras/mail"
-SSLType IMAPS
-CertificateFile /etc/ssl/certs/ca-certificates.crt
-
-MaildirStore ispras-local
-Path /mnt/WorkDisk/share/mail/ispras/
-Inbox /mnt/WorkDisk/share/mail/ispras/inbox/
-
-Channel ispras-inbox
-Far :ispras-remote:"INBOX"
-Near :ispras-local:inbox
-Create Both
-Expunge Both
-SyncState *
-
-Channel ispras-sent
-Far :ispras-remote:"Sent"
-Near :ispras-local:sent
-Create Both
-Expunge Both
-SyncState *
-
-Channel ispras-spam
-Far :ispras-remote:"Spam"
-Near :ispras-local:spam
-Create Both
-Expunge Both
-SyncState *
-
-Channel ispras-trash
-Far :ispras-remote:"Trash"
-Near :ispras-local:trash
-Create Both
-Expunge Both
-SyncState *
-
-Group tarantool
-Channel tarantool-inbox
-Channel tarantool-sent
 Channel tarantool-spam
 Channel tarantool-trash

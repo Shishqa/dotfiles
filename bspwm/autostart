@@ -1,19 +1,19 @@
 #!/bin/sh
 ############################################################################
 
-picom &
+[ -f "$BSPWM_CONFIG/desktops" ] && source "$BSPWM_CONFIG/desktops"
+
+killall picom && picom &
 
 nitrogen --restore &
 
 ~/.config/polybar/scripts/launch-polybar &
 
-libinput-gestures-setup start &
+killall dunst && dunst &
 
-dunst &
+killall batsignal && batsignal -b &
 
-batsignal -b &
-
-flameshot &
+killall flameshot && flameshot &
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
