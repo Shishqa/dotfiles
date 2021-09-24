@@ -56,5 +56,5 @@ TIMER_FORMAT="\n\e[95m[%d]\e[39m"
 #==========================================================================#
 
 # Clippy
-[ -f "$HOME/dev/__mipt/tftds/distsys-course/client/activate" ] && source "$HOME/dev/__mipt/tftds/distsys-course/client/activate"
-[ -f "$HOME/dev/__mipt/tftds/distsys-course/client/complete.bash" ] && source "$HOME/dev/__mipt/tftds/distsys-course/client/complete.bash"
+#[ -f "$HOME/dev/__mipt/tftds/distsys-course/client/activate" ] && source "$HOME/dev/__mipt/tftds/distsys-course/client/activate"
+#[ -f "$HOME/dev/__mipt/tftds/distsys-course/client/complete.bash" ] && source "$HOME/dev/__mipt/tftds/distsys-course/client/complete.bash"
