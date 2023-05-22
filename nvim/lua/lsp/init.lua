@@ -2,9 +2,12 @@ local servers = {
   'bashls',
   'ccls',
   'cmake',
+  'dartls',
   'gopls',
-  'pyright',
-  'sumneko_lua',
+  -- 'pyright',
+  'ruff_lsp',
+  'rust_analyzer',
+  'lua_ls',
 }
 
 local nvim_lsp = require('lspconfig')

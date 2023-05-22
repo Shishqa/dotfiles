@@ -1,23 +1,44 @@
 #==========================================================================#
 
+# export LC_ALL=C
+
+export PUB_CACHE="$HOME/.local/share/pub-cache"
+
+export CARGO_HOME="$HOME/.local/share/cargo"
+
 export SCRIPTS="$HOME/scripts"
 export WORK="/mnt/WorkDisk/share"
 
 export APP_DATA="$HOME/data"
 
-export GNUPGHOME="$APP_DATA/gnupg"
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
+
+export TEXMFHOME="$HOME/.local/share/texmf"
+export TEXMFVAR="$HOME/.cache/texlive/texmf-var"
+export TEXMFCONFIG="$HOME/.config/texlive/texmf-config"
+
+export RUSTUP_HOME="$HOME/.local/share/rustup"
+export PATH="$PATH:$HOME/.local/share/cargo/bin"
+
+#==========================================================================#
+
+export ANSIBLE_HOME="$HOME/.local/share/ansible"
+export ANSIBLE_CONFIG="$HOME/.config/ansible/ansible.cfg"
+export ANSIBLE_GALAXY_CACHE_DIR="$HOME/.cache/ansible/galaxy_cache"
 
 #==========================================================================#
 
 export TERMINAL="alacritty"
 export EDITOR="nvim"
 export EXPLORER="vifm"
-export BROWSER="brave"
+export BROWSER="microsoft-edge-stable"
 export CHROME_PATH="/bin/brave"
 
+export CHROME_EXECUTABLE="/usr/bin/microsoft-edge-stable"
+
 # Secret
-export SECRET="$WORK/secret"
-export PASSWORD_STORE_DIR="$SECRET/passwords"
+export PASSWORD_STORE_DIR="$HOME/.passwords"
 
 #==========================================================================#
 
@@ -42,6 +63,6 @@ export VIFM="$HOME/.config/vifm"
 
 #==========================================================================#
 
-export PATH="$PATH:$SCRIPTS:$SCRIPTS/rofi/:$HOME/.local/bin:$GOBIN:$HOME/.gem/ruby/3.0.0/bin"
+export PATH="$PATH:$HOME/.local/bin:/usr/local/go/bin:$GOBIN"
 
 #==========================================================================#

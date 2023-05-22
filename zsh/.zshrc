@@ -13,8 +13,8 @@ ZSH_THEME="shishqa"
 
 #==========================================================================#
 
-# How often to auto-update (in days).
-export UPDATE_ZSH_DAYS=3
+zstyle ':omz:update' mode reminder
+zstyle ':omz:update' frequency 7
 
 # Make git load faster
 DISABLE_UNTRACKED_FILES_DIRTY="true"
@@ -51,10 +51,4 @@ TIMER_FORMAT="\n\e[95m[%d]\e[39m"
 
 [ -f "$ZDOTDIR/.aliasrc" ] && source "$ZDOTDIR/.aliasrc"
 
-[ -f "$SCRIPTS/shittime.bash" ] && source "$SCRIPTS/shittime.bash"
-
 #==========================================================================#
-
-# Clippy
-#[ -f "$HOME/dev/__mipt/tftds/distsys-course/client/activate" ] && source "$HOME/dev/__mipt/tftds/distsys-course/client/activate"
-#[ -f "$HOME/dev/__mipt/tftds/distsys-course/client/complete.bash" ] && source "$HOME/dev/__mipt/tftds/distsys-course/client/complete.bash"
