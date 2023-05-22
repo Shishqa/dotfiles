@@ -118,8 +118,6 @@ set nolaststatus
 " :mark mark /full/directory/path [filename]
 
 mark h ~/
-mark d /mnt/WorkDisk/share/dev/
-mark n /mnt/WorkDisk/share/notes/
 
 " ------------------------------------------------------------------------------
 
