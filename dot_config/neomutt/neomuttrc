@@ -1,0 +1,33 @@
+# vim: filetype=muttrc
+
+# set folder = "~/docs/mail/"
+
+source ~/.config/neomutt/settings
+# source ~/.config/neomutt/sidebar
+
+# Where to put the stuff
+
+# folder-hook ispras/* source ~/.config/neomutt/accounts/shishqa@ispras.ru
+
+
+set from      = "shishqa@ispras.ru"
+set realname  = "Mikhail Shishatskiy"
+
+set imap_user = "shishqa@ispras.ru"
+set imap_pass = `pass show mail.ispras.ru/shishqa@ispras.ru`
+
+set smtp_url  = "smtps://shishqa@ispras.ru@mail.ispras.ru:465"
+set smtp_pass = `pass show mail.ispras.ru/shishqa@ispras.ru`
+
+set folder = "imaps://mail.ispras.ru:993"
+
+set spoolfile = "+INBOX"
+# set postponed = "+Drafts"
+# set record = "+Sent Mail"
+# set trash = "+Trash"
+
+mailboxes =Important =Starred =Drafts ="Sent Mail" =Spam =Trash
+
+set header_cache = "~/docs/mail/headers"
+set message_cachedir = "~/docs/mail/bodies"
+set certificate_file = "~/docs/mail/certificates"
