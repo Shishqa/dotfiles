@@ -16,3 +16,45 @@
     exact = true
     stripComponents = 1
     refreshPeriod = "168h"
+[".config/tmux/plugins/tpm"]
+    type = "archive"
+    url = "https://github.com/tmux-plugins/tpm/archive/master.tar.gz"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
+[".config/tmux/plugins/tmux-df"]
+    type = "archive"
+    url = "https://github.com/tmux-plugins/tpm/archive/master.tar.gz"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
+[".config/tmux/plugins/tmux-cpu"]
+    type = "archive"
+    url = "https://github.com/tmux-plugins/tmux-cpu/archive/master.tar.gz"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
+[".config/tmux/plugins/tmux-net-speed"]
+    type = "archive"
+    url = "https://github.com/tmux-plugins/tmux-net-speed/archive/refs/heads/master.tar.gz"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
+[".config/tmux/plugins/tmux-resurrect"]
+    type = "archive"
+    url = "https://github.com/tmux-plugins/tmux-resurrect/archive/master.tar.gz"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
+[".config/tmux/plugins/vim-tmux-navigator"]
+    type = "archive"
+    url = "https://github.com/christoomey/vim-tmux-navigator/archive/master.tar.gz"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
+[".config/tmux/plugins/tmux-prefix-highlight"]
+    type = "archive"
+    url = "https://github.com/tmux-plugins/tmux-prefix-highlight/archive/master.tar.gz"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
