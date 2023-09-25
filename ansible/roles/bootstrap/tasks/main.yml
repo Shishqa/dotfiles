@@ -22,7 +22,7 @@
 
 - name: Add neovim repository
   ansible.builtin.apt_repository:
-    repo: ppa:neovim-ppa/stable
+    repo: ppa:neovim-ppa/unstable
   when: ansible_os_family == 'Debian'
 
 - name: Import zsh tasks
