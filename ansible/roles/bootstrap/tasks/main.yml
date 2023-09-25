@@ -18,6 +18,12 @@
 - name: Add alacritty repository
   ansible.builtin.apt_repository:
     repo: ppa:aslatter/ppa
+  when: ansible_os_family == 'Debian'
+
+- name: Add neovim repository
+  ansible.builtin.apt_repository:
+    repo: ppa:neovim-ppa/stable
+  when: ansible_os_family == 'Debian'
 
 - name: Import zsh tasks
   import_tasks: 01_zsh.yml
