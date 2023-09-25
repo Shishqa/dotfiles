@@ -9,9 +9,12 @@ sudo pacman -S --noconfirm ansible
 pacman -S --noconfirm ansible
 {{     end -}}
 {{   else if (eq .chezmoi.osRelease.id "ubuntu" "debian") -}}
+export TZ=Europe/Moscow
 {{     if ne .chezmoi.username "root" -}}
+DEBIAN_FRONTEND="noninteractive" sudo apt -y install tzdata
 sudo apt install -y ansible
 {{     else -}}
+DEBIAN_FRONTEND="noninteractive" apt -y install tzdata
 apt install -y ansible
 {{     end -}}
 {{   end -}}
