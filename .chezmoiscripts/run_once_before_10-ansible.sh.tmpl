@@ -1,0 +1,19 @@
+#!/bin/sh
+
+echo -e "\033[0;32m>>>>> Begin Setting Up Ansible <<<<<\033[0m"
+
+{{   if (eq .chezmoi.osRelease.id "arch") -}}
+{{     if ne .chezmoi.username "root" -}}
+sudo pacman -S --noconfirm ansible
+{{     else -}}
+pacman -S --noconfirm ansible
+{{     end -}}
+{{   else if (eq .chezmoi.osRelease.id "ubuntu" "debian") -}}
+{{     if ne .chezmoi.username "root" -}}
+sudo apt install -y ansible
+{{     else -}}
+apt install -y ansible
+{{     end -}}
+{{   end -}}
+
+echo -e "\033[0;32m>>>>> Finish Setting Ansible <<<<<\033[0m"
