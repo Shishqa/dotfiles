@@ -1,0 +1,9 @@
+[init]
+	defaultBranch = main
+[user]
+	email = shishqa.main@gmail.com
+	name = shishqa
+[includeIf "gitdir/i:~/dev/ispras/"]
+	path = ispras
+[credential]
+	helper = !pass-git-helper $@
