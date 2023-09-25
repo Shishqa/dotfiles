@@ -7,6 +7,10 @@
     cache_valid_time: 3600
   when: ansible_os_family == 'Debian'
 
+- name: Add alacritty repository
+  ansible.builtin.apt_repository:
+    repo: ppa:aslatter/ppa
+
 - name: Ensure basic packages are present
   become: yes
   package:
