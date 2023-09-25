@@ -1,0 +1,33 @@
+local opt = vim.opt
+
+opt.history = 500
+
+opt.mouse = 'a'
+opt.expandtab = true                -- Use spaces instead of tabs
+opt.hidden = true                   -- Enable background buffers
+opt.ignorecase = true               -- Ignore case
+opt.joinspaces = true               -- No double spaces with join
+opt.list = true                     -- Show some invisible characters
+opt.number = true                   -- Show line numbers
+opt.relativenumber = true           -- Relative line numbers
+opt.scrolloff = 7                   -- Lines of context
+opt.shiftround = true               -- Round indent
+opt.shiftwidth = 2                  -- Size of an indent
+opt.sidescrolloff = 8               -- Columns of context
+opt.smartcase = true                -- Do not ignore case with capitals
+opt.smartindent = true              -- Insert indents automatically
+opt.splitbelow = true               -- Put new windows below current
+opt.splitright = true               -- Put new windows right of current
+opt.tabstop = 2                     -- Number of spaces tabs count for
+opt.termguicolors = true            -- True color support
+opt.wrap = true                     -- Disable line wrap
+opt.wildmenu = true
+opt.cmdheight = 1
+opt.updatetime = 300
+opt.hlsearch = true
+opt.incsearch = true
+opt.lazyredraw = true
+opt.signcolumn = 'yes'
+opt.showmatch = true
+opt.spelllang = 'en_us,ru_ru'
+opt.spell = true
