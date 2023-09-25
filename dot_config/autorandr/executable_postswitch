@@ -1,0 +1,3 @@
+#!/bin/bash -x
+
+echo 'awesome.restart()' | awesome-client || true
