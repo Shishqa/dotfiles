@@ -1,0 +1,14 @@
+---
+
+- name: Install dependencies
+  become: yes
+  package:
+    name:
+      - ccls
+      - yarn
+      - npm
+      - cmake
+    state: present
+
+- name: Install nvim plugins
+  shell: 'nvim --headless +PlugInstall +qall'

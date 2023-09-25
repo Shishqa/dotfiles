@@ -1,0 +1,29 @@
+---
+
+- name: Update apt cache
+  become: yes
+  apt:
+    update_cache: yes
+    cache_valid_time: 3600
+  when: ansible_os_family == 'Debian'
+
+- name: Ensure basic packages are present
+  become: yes
+  package:
+    name:
+      - git
+      - curl
+      - vifm
+      - htop
+      - tmux
+      - alacritty
+      - feh
+      - flameshot
+      - neofetch
+      - neomutt
+      - rofi
+      - xournalpp
+      - neovim
+
+- name: Import zsh tasks
+  import_tasks: 01_zsh.yml

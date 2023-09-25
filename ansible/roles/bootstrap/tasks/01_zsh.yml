@@ -1,0 +1,15 @@
+---
+- name: Install zsh
+  become: yes
+  package:
+    name: zsh
+    state: latest
+
+- name: Change users shell to zsh
+  become: yes
+  user:
+    name: "{{ ansible_user_id }}"
+    shell: /usr/bin/zsh
+
+- name: Make shell refresh
+  meta: reset_connection
