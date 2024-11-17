@@ -9,5 +9,6 @@ m.explorer = "vifm"
 m.explorer_cmd = m.terminal .. " -e " .. m.explorer
 m.password_cmd = "rofi-pass"
 m.emoji_cmd = "rofimoji"
+m.journal_cmd = m.terminal .. "-e tmux new-session -A -s notes"
 
 return m
