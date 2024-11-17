@@ -2,6 +2,8 @@
 
 # export LC_ALL=C
 
+export DEBUGINFOD_URLS="https://debuginfod.archlinux.org"
+
 export PUB_CACHE="$HOME/.local/share/pub-cache"
 
 export CARGO_HOME="$HOME/.local/share/cargo"
@@ -23,6 +25,11 @@ export PATH="$PATH:$HOME/.local/share/cargo/bin"
 
 #==========================================================================#
 
+# Added by Radicle.
+export PATH="$PATH:/home/shishqa/.radicle/bin"
+
+#==========================================================================#
+
 export ANSIBLE_HOME="$HOME/.local/share/ansible"
 export ANSIBLE_CONFIG="$HOME/.config/ansible/ansible.cfg"
 export ANSIBLE_GALAXY_CACHE_DIR="$HOME/.cache/ansible/galaxy_cache"
@@ -32,10 +39,10 @@ export ANSIBLE_GALAXY_CACHE_DIR="$HOME/.cache/ansible/galaxy_cache"
 export TERMINAL="alacritty"
 export EDITOR="nvim"
 export EXPLORER="vifm"
-export BROWSER="brave"
-export CHROME_PATH="/bin/brave"
+export BROWSER="/opt/yandex/browser/yandex-browser"
+export CHROME_PATH="/opt/yandex/browser/yandex-browser"
 
-export CHROME_EXECUTABLE="/usr/bin/brave"
+export CHROME_EXECUTABLE="/opt/yandex/browser/yandex-browser"
 
 # Secret
 export PASSWORD_STORE_DIR="$HOME/.passwords"
@@ -46,6 +53,14 @@ export GOPATH="$HOME/.goenv"
 export GOBIN="$HOME/.goenv/bin"
 
 export CXX="/usr/bin/clang++"
+
+#==========================================================================#
+
+# export OLLAMA_HOST=192.168.1.58
+
+#==========================================================================#
+
+export BARTIB_FILE="$HOME/notes/bartib.log"
 
 #==========================================================================#
 

@@ -55,3 +55,15 @@ TIMER_FORMAT="\n\e[95m[%d]\e[39m"
 
 eval "$(pyenv init -)"
 
+# The next line updates PATH for Yandex Cloud YDB CLI.
+if [ -f '/home/shishqa/ydb/path.bash.inc' ]; then source '/home/shishqa/ydb/path.bash.inc'; fi
+
+if [ -f "$HOME/.config/zsh/custom/bartib_completion.sh" ]; then source "$HOME/.config/zsh/custom/bartib_completion.sh"; fi
+
+# pnpm
+export PNPM_HOME="/home/shishqa/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
