@@ -1,6 +1,6 @@
 -- specify browser to open preview page
 -- default: ''
-vim.g.mkdp_browser = 'brave'
+vim.g.mkdp_browser = 'yandex-browser-stable'
 
 --[[
 " options for markdown render

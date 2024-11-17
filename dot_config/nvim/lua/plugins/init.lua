@@ -9,6 +9,7 @@ require("paq")({
   "neovim/nvim-lspconfig",
   "nvim-treesitter/nvim-treesitter",
   "simrat39/rust-tools.nvim",
+  "vim-scripts/dbext.vim",
 
   -- [[ Completion ]]
   "hrsh7th/cmp-nvim-lsp",
@@ -36,11 +37,14 @@ require("paq")({
   "norcalli/nvim-colorizer.lua",
   "folke/zen-mode.nvim",
 
+  -- [[ LLMs ]]
+  "David-Kunz/gen.nvim",
+
   -- [[ ? ]]
   "npxbr/glow.nvim",
   "lervag/wiki.vim",
   "ntpeters/vim-better-whitespace",
-  { "iamcco/markdown-preview.nvim", run = function() vim.fn['mkdp#util#install']() end },
+  { "iamcco/markdown-preview.nvim", build = function() vim.fn['mkdp#util#install']() end },
   "ferrine/md-img-paste.vim",
 })
 
@@ -65,3 +69,6 @@ require("plugins.markdown-preview")
 require("plugins.md-img-paste")
 require("plugins.rust-tools")
 require("plugins.zen-mode")
+require("plugins.gen")
+
+require("totosca").setup()
